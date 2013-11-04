@@ -1,0 +1,10 @@
+#wpl_ace_editor {
+    height: 540px;
+    width: 97%;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+#template #wpl_ace_editor div {
+    margin-right: auto;
+}
