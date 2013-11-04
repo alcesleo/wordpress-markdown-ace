@@ -52,13 +52,6 @@ class WP_Markdown_Ace {
 	}
 
 	/**
-	 * Replaces the editor with ace
-	 */
-	public function modify_textarea() {
-
-	}
-
-	/**
 	 * @return boolean If editing or creating a post or a page
 	 */
 	private function editing_post() {
