@@ -1,10 +1,10 @@
  jQuery(document).ready(function() {
 
-    // insert #wpl_ace_editor div after textarea
-    jQuery('textarea.wp-editor-area').after('<div id="wpl_ace_editor">test</div>');
+    // insert #wp_ace_editor div after textarea
+    jQuery('textarea.wp-editor-area').after('<div id="wp_ace_editor"></div>');
 
     var styles_textarea = jQuery('textarea.wp-editor-area').hide();
-    var styles_editor = ace.edit("wpl_ace_editor");
+    var styles_editor = ace.edit("wp_ace_editor");
 
     styles_editor.setTheme("ace/theme/chrome");
     styles_editor.setShowPrintMargin(false);
