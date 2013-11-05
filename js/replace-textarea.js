@@ -7,7 +7,7 @@
     var styles_editor = ace.edit("wpl_ace_editor");
 
     styles_editor.setTheme("ace/theme/chrome");
-    styles_editor.setShowPrintMargin( false );
+    styles_editor.setShowPrintMargin(false);
 
     var MarkdownMode = require("ace/mode/markdown").Mode;
     styles_editor.getSession().setMode(new MarkdownMode());
@@ -16,7 +16,7 @@
     // http://stackoverflow.com/questions/6440439/how-do-i-make-a-textarea-an-ace-editor
     styles_editor.getSession().setValue(styles_textarea.val());
 
-    styles_editor.getSession().on('change', function(){
+    styles_editor.getSession().on('change', function() {
         styles_textarea.val(styles_editor.getSession().getValue());
     });
 
