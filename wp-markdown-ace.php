@@ -14,7 +14,7 @@ class WP_Markdown_Ace {
 	private static $PLUGIN_URL;
 
 	public function __construct() {
-
+		// TODO: Theme, minified
 		// TODO: More dynamic
 		self::$PLUGIN_URL = WP_PLUGIN_URL.'/wp-ace';
 
@@ -39,11 +39,11 @@ class WP_Markdown_Ace {
 		wp_enqueue_style( 'ace_editor_css' );
 
 		// ace editor
-		wp_register_script( 'ace_editor', self::$PLUGIN_URL.'/js/ace/src/ace.js', false );
+		wp_register_script( 'ace_editor', self::$PLUGIN_URL.'/js/ace-builds/src/ace.js', false );
 		wp_enqueue_script( 'ace_editor' );
 
 		// ace markdown mode
-		wp_register_script( 'ace_mode_markdown', self::$PLUGIN_URL.'/js/ace/src/mode-markdown.js', array( 'ace_editor' ) );
+		wp_register_script( 'ace_mode_markdown', self::$PLUGIN_URL.'/js/ace-builds/src/mode-markdown.js', array( 'ace_editor' ) );
 		wp_enqueue_script( 'ace_mode_markdown' );
 
 		// initialization in footer
