@@ -5,7 +5,7 @@
  * Description: Makes the post editor into a good Markdown editor
  * Version: 0.1
  * Author: Jimmy Börjesson @alcesleo
- * License: GPL2
+ * License: GPLv2 or later
  */
 
 class WP_Markdown_Ace {
