@@ -1,11 +1,10 @@
 <?php
 /**
  * Plugin Name: wp-markdown-ace
- * Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
+ * Plugin URI: https://github.com/alcesleo/wordpress-markdown-ace
  * Description: Makes the post editor into a good Markdown editor
  * Version: 0.1
  * Author: Jimmy Börjesson @alcesleo
- * Author URI: http://URI_Of_The_Plugin_Author
  * License: GPL2
  */
 
