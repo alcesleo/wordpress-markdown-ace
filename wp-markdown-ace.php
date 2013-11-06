@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: wp-markdown-ace
+ * Plugin Name: MarkdownAce
  * Plugin URI: https://github.com/alcesleo/wordpress-markdown-ace
  * Description: Makes the post editor into a good Markdown editor
  * Version: 0.1
