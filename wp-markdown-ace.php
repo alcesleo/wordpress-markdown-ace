@@ -2,9 +2,10 @@
 /**
  * Plugin Name: MarkdownAce
  * Plugin URI: https://github.com/alcesleo/wordpress-markdown-ace
- * Description: Makes the post editor into a good Markdown editor
+ * Description: Turns the post/page-editor into Ace editor (http://ace.c9.io/)
  * Version: 0.1
  * Author: Jimmy Börjesson @alcesleo
+ * Author URI: https://github.com/alcesleo
  * License: GPLv2 or later
  */
 
