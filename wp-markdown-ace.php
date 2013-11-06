@@ -10,12 +10,15 @@
 
 class WP_Markdown_Ace {
 
+	private static $PLUGIN_PATH;
+	private static $PLUGIN_DIR;
 	private static $PLUGIN_URL;
 
 	public function __construct() {
-		// TODO: Theme, minified
-		// TODO: More dynamic
-		self::$PLUGIN_URL = WP_PLUGIN_URL.'/wp-ace';
+
+		self::$PLUGIN_PATH = plugin_basename( dirname( __FILE__ ) );
+		self::$PLUGIN_DIR  = WP_PLUGIN_DIR.'/'.self::$PLUGIN_PATH.'/';
+		self::$PLUGIN_URL  = WP_PLUGIN_URL.'/'.self::$PLUGIN_PATH.'/';
 
 		add_action( 'admin_init', array( $this, 'on_admin_init' ) );
 	}
