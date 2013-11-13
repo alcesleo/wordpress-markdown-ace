@@ -1,19 +1,21 @@
 (function ($) {
     $(document).ready(function() {
 
-        // insert #wp_ace_editor div after textarea
-        $('textarea.wp-editor-area').after('<div id="wp_ace_editor"></div>');
+        // original editor
+        var $textarea = $('textarea.wp-editor-area');
 
-        // hide textarea and get elements
-        var $textarea = $('textarea.wp-editor-area').hide();
+        // insert element for Ace and hide original editor
+        $textarea.after('<div id="wp_ace_editor"></div>');
+        $textarea.hide();
         var $aceEditor = ace.edit("wp_ace_editor");
 
-        $textarea.hide();
+        // TODO: Hide unused controls
 
         // ace settings
-        $aceEditor.setTheme("ace/theme/chrome");
+        $aceEditor.setTheme("ace/theme/chrome"); // i think it fits with WP
         $aceEditor.setShowPrintMargin(false);
 
+        // activate markdown mode
         var MarkdownMode = require("ace/mode/markdown").Mode;
         $aceEditor.getSession().setMode(new MarkdownMode());
 
